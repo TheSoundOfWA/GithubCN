@@ -1,0 +1,27 @@
+{
+   "background": {
+      "service_worker": "src/background/index.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "src/content/index.js" ],
+      "matches": [ "https://github.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Github 汉化插件",
+   "devtools_page": "src/devtools/index.html",
+   "icons": {
+      "16": "icon-16.png",
+      "34": "icon-34.png",
+      "48": "icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4PRBNAYo9jJsEiuPd+xcmagFG7uqsr2f8SdcdhFZtj6tspMhuEkZbNPQQAwFVNntuTSpxLYI8ich7VVoNHmIHKkA5pHxde3W38zUWii0MTeYtzDNORkaUgO7fEsSOG51zOJxmrxKYc3jGLpbMTza5jEJRDad52INAOjOaG62OnwC3y1Lpq4Nz4QCNCzjuDsgMe1nKrK3KwqV2flfARugb+Zy6Sq479WyyvYapToS2wv0u77pft2RcCBM5QO69SxpNkYDRw/DrbtIRhQ8IrW5PsKwieAUElHFq+IQE4omOrVbFkvMPiyC5V2z612KRZv7+2BYrhhUnTFUnV30wIfq0wIDAQAB",
+   "manifest_version": 3,
+   "name": "GithubCN",
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.8.0",
+   "web_accessible_resources": [ {
+      "matches": [  ],
+      "resources": [ "icon-48.png", "icon-34.png", "icon-16.png" ]
+   } ]
+}
